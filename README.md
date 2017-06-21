@@ -1,1 +1,1 @@
-# workshop-android-for-ios
+# Workshop Android for iOS Devs
