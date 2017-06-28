@@ -10,18 +10,18 @@ import kotlinx.android.synthetic.main.item_main.view.*
  * Created by ostanik on 2017-06-22.
  */
 class MainAdapter(val listener: MainItemListener): RecyclerView.Adapter<MainViewHolder>() {
-    var mockedList: List<String> = listOf()
+    var responseList: List<String> = listOf()
     set(value) {
         field = value
         notifyDataSetChanged()
     }
 
     override fun getItemCount(): Int {
-        return mockedList.size
+        return responseList.size
     }
 
     override fun onBindViewHolder(holder: MainViewHolder?, position: Int) {
-        holder?.bind(mockedList[position], listener)
+        holder?.bind(responseList[position], listener)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup?, viewType: Int): MainViewHolder {
